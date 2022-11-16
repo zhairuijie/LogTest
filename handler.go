@@ -47,7 +47,7 @@ func Err(w http.ResponseWriter, req *http.Request) {
 }
 
 func Ping(w http.ResponseWriter, req *http.Request) {
-	os.Stdout.WriteString("Msg to ping\n")
+	//os.Stdout.WriteString("Msg to ping\n")
 	fmt.Fprintf(w, "pong!\n")
 }
 
