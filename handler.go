@@ -112,6 +112,8 @@ func OutLog(w http.ResponseWriter, req *http.Request) {
 			os.Stderr.Write(bytes)
 			fmt.Println()
 		}
+		fmt.Println("CLOUD_ENV: ", os.Getenv("CLOUD_ENV"))
+		fmt.Println("grey_debug_flag: ", os.Getenv("flag"))
 	}
 }
 
